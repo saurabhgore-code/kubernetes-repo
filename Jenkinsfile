@@ -4,7 +4,7 @@ podTemplate(containers: [
 {
 node(web-server) {
         stage('Get the project') {
-            git 'https://github.com/saurabhgore-code/selenium-project-repo-1.git'
+            git 'https://github.com/saurabhgore-code/kubernetes-repo.git'
             container('apache') {
                 stage('run apache container') {
                     sh 'echo my name is sagore'
