@@ -2,7 +2,7 @@ podTemplate(containers: [
     containerTemplate(name: 'apache-container', image: 'httpd', command: 'sleep', args: '99d')
   ]) 
 {
-node(server) {
+node(web_server) {
         stage('Get the project') {
             git 'https://github.com/saurabhgore-code/kubernetes-repo.git'
             container('apache') {
